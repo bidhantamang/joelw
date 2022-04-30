@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Rubik',sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    /* color: #555; */
+}
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/img/img-back.jpg) ;
+}
+.heading-gap{
+    margin-bottom: 7.4rem;
+}
+.grid{
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+.grid-col-2{
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-col-6{
+    grid-template-columns: repeat(6,1fr);
+}
+.grid-center-v{
+    align-items: center;
+}
+.header-middle--content{
+    /* width: 90%; */
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.text-hello{
+    font-size: 8.4em;
+    --animate-duration: 2s;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.5px;
+    /* --animate-repeat:infinite; */
+}
+.text-discription-one{
+    font-size: 5.4rem;
+    margin-bottom: 3.2rem;
+    letter-spacing: -0.5px;
+}
+.text-discription-one span{
+    color: #72A0C1;
+
+}
+.text-discription-two{
+    font-size: 4.8rem;
+    margin-bottom: 2.4rem;
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    
+
+}
+
+.logo-name{
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #72A0C1;
+
+}
+
+.main-nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4.2rem;
+    text-transform: uppercase;
+
+}
+.main-nav-link {
+    text-decoration: none;
+    color: #ffff;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    /* font-weight: 500; */
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color:#72A0C1;
+}
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    border:3px solid #72A0C1;
+    padding: 1.6rem 3.2rem;
+    border-radius: 1.2rem;
+    transition: all 0.3s;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #72A0C1;
+}
+
+.section-hero{
+   padding: 9.6rem 0;
+}
+.section-gallery{
+    padding: 9.6rem 0;
+}
+.common-title,.gallery-title{
+    text-align: center;
+    font-size: 3.2rem;
+    position: relative;
+    color: #555;
+    font-weight: 700;
+}
+
+.common-title:before,
+.gallery-title:before{
+        content: '';
+        width: 5%;
+      border-bottom: solid 3px #72A0C1;
+        position: absolute;
+        /* left: 38%; */
+        top: 50%;
+}
+.gallery-title:before{
+    left:41%;
+}
+.common-title:before{
+    left: 38%;
+}
+
+.img-about{
+    width: 100%;
+}
+.hero-content-intro{
+    font-size: 2.6rem;
+    margin-bottom: 2.4rem;
+}
+.hero-content-discription{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    
+}
+
+.hero-content-discription span{
+    margin-top:2.4rem;
+}
+.gallery{
+    display: grid;
+    gap: 1.6rem;
+    /* padding: 1.6rem; */
+}
+.gallery-item{
+    overflow: hidden;
+}
+.gallery-item img{
+    display: block;
+    width: 100%;
+    transition: all .3s;
+}
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.bible-text{
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: -.5px;
+    padding: 10rem 0;
+}
+.bible-verse{
+    background-color: #72A0C1;
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    padding: 9.6rem 0;
+    align-items: center;
+    background-color: #72A0C1;
+}
+
+.social-links{
+list-style: none;
+}
+.social-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+.copyright{
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+.footer-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+/*media queries*/
+@media (max-width:47.5em){
+    html{
+        font-size: 50%;
+    }
+    .common-title::before {
+        left: 36%;
+    }
+    .gallery-title::before {
+        left: 38%;
+    }
+    .text-discription-one{
+        font-size: 2.4rem;
+    }
+    .text-discription-two{
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width:30em){
+    .section-header{
+        flex-direction: row;
+    }
+    .common-title::before {
+        left: 28%;
+    }
+    .gallery-title::before {
+        left: 33%;
+    }
+    .bible-text{
+        padding: 0 1.2em;
+        line-height: 1.2;
+        font-size: 1.8em;
+    }
+    .grid-col-6{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid-col-2{
+        grid-template-columns: 1fr;
+    }
+    .text-discription-one {
+        font-size: 2.8rem;
+        padding-bottom: 2.4rem;
+    }
+    
+    .text-discription-two {
+        font-size: 1.8rem;
+        padding-bottom: 2.4rem;
+    }
+}
